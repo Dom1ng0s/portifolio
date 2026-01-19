@@ -40,7 +40,7 @@ header {
     align-items: center;
 }
 
-.logo { font-weight: bold; font-size: 1.2rem; }
+.logo { font-weight: bold; font-size: 1.2rem;}
 .nav-links a { margin-left: 20px; color: var(--text-muted); }
 .nav-links a:hover { color: var(--accent); }
 
@@ -98,6 +98,11 @@ header {
 
 /* --- GRID SYSTEM (Quem sou eu) --- */
 .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+.stack-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
