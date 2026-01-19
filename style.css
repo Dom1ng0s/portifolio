@@ -263,3 +263,37 @@ code {
 .lightbox-overlay.active img {
     transform: scale(1);
 }
+
+/* --- SEÇÃO DE CONTATO --- */
+#contact {
+    scroll-margin-top: 100px; /* Ajuste para o scroll suave não cortar o título */
+}
+
+.contact-wrapper {
+    text-align: center;
+    background-color: var(--bg-card);
+    padding: 50px 20px;
+    border-radius: var(--radius);
+    border: 1px solid #333;
+    transition: border-color 0.2s;
+}
+
+.contact-wrapper:hover {
+    border-color: var(--accent);
+}
+
+.contact-wrapper p {
+    color: var(--text-muted);
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.1rem;
+}
+
+.contact-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
