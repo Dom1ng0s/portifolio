@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     
     /* =============================================================
-       1. LIGHTBOX (ZOOM) - FUNCIONA EM TODAS AS PÁGINAS
+       1. LIGHTBOX (ZOOM)
        ============================================================= */
     
     const lightbox = document.createElement('div');
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     /* =============================================================
-       2. CARROSSEL AUTO-SCROLL (APENAS SE EXISTIR NA PÁGINA)
+       2. CARROSSEL AUTO-SCROLL 
        ============================================================= */
     const container = document.querySelector('.projects-container');
     
@@ -44,8 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const card = container.querySelector('.card');
             if (!card) return;
             
-            // Largura do card + gap
-            const cardWidth = 320; 
+            const cardWidth = card.offsetWidth + 20
             const maxScroll = container.scrollWidth - container.clientWidth;
 
             if (container.scrollLeft >= maxScroll - 10) {
